@@ -1,8 +1,9 @@
-import { ISharedNoteRecordModel, SharedNoteRecordFormatter } from '../../models';
 import { inject, provideSingleton } from '../../ioc';
 import { BaseRepository } from './BaseRepository';
+import { ISharedNoteRecordModel } from '@ancestable/shared';
 import { MongoDbConnection } from '../../config/mongoConfiguration';
 import { Schema } from 'mongoose';
+import { SharedNoteRecordFormatter } from '../../models';
 import { Tag } from '@ancestable/gedcom7models';
 
 @provideSingleton(SharedNoteRecordRepository)

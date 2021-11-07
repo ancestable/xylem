@@ -1,8 +1,9 @@
-import { ISubmitterRecordModel, SubmitterRecordFormatter } from '../../models';
 import { inject, provideSingleton } from '../../ioc';
 import { BaseRepository } from './BaseRepository';
+import { ISubmitterRecordModel } from '@ancestable/shared';
 import { MongoDbConnection } from '../../config/mongoConfiguration';
 import { Schema } from 'mongoose';
+import { SubmitterRecordFormatter } from '../../models';
 import { Tag } from '@ancestable/gedcom7models';
 
 @provideSingleton(SubmitterRecordRepository)

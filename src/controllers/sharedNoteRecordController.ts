@@ -12,7 +12,7 @@ import {
 } from 'tsoa';
 
 import { DatasetService, UserService } from '../services';
-import { ISharedNoteRecordModel, SharedNoteRecordCreationModel } from '../models';
+import { ISharedNoteRecordModel, SharedNoteRecordCreationModel } from '@ancestable/shared';
 import { inject, provideSingleton } from '../ioc';
 import { BaseRecordController } from './baseRecordController';
 import { SharedNoteRecordService } from '../services/sharedNoteRecordService';

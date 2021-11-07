@@ -12,8 +12,9 @@ import {
   Tags,
 } from 'tsoa';
 
-import { IPaginationModel, IUserModel, UserCreationModel } from '../models';
+import { IUserModel, UserCreationModel } from '@ancestable/shared';
 import { inject, provideSingleton } from '../ioc';
+import { IPaginationModel } from '../models';
 import { UserService } from '../services';
 
 @Tags('users')

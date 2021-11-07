@@ -1,6 +1,7 @@
-import { IIndividualRecordModel, IndividualRecordFormatter } from '../../models';
 import { inject, provideSingleton } from '../../ioc';
 import { BaseRepository } from './BaseRepository';
+import { IIndividualRecordModel } from '@ancestable/shared';
+import { IndividualRecordFormatter } from '../../models';
 import { MongoDbConnection } from '../../config/mongoConfiguration';
 import { Schema } from 'mongoose';
 import { Tag } from '@ancestable/gedcom7models';

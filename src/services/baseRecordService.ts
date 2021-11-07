@@ -1,6 +1,6 @@
 import { BaseRepository } from '../repositories/mongodb/BaseRepository';
 import { BaseService } from './BaseService';
-import { IBaseRecord } from '../models/baseRecord';
+import { IBaseRecord } from '@ancestable/shared';
 
 export abstract class BaseRecordService<IRecordModel, RecordCreationModel extends (IRecordModel & IBaseRecord)> extends BaseService<IRecordModel> {
 

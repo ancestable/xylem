@@ -12,7 +12,7 @@ import {
 } from 'tsoa';
 
 import { DatasetService, FamilyRecordService, UserService } from '../services';
-import { FamilyRecordCreationModel, IFamilyRecordModel } from '../models';
+import { FamilyRecordCreationModel, IFamilyRecordModel } from '@ancestable/shared';
 import { inject, provideSingleton } from '../ioc';
 import { BaseRecordController } from './baseRecordController';
 

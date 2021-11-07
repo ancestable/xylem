@@ -10,7 +10,7 @@ import { RepositoryRecordService } from './repositoryRecordService';
 import { SharedNoteRecordService } from './sharedNoteRecordService';
 //import { SourceRecordService } from './sourceRecordService';
 import { SubmitterRecordService } from './submitterRecordService';
-import { UserRole } from '../models/userRole.enum';
+import { UserRole } from '@ancestable/shared';
 import { errorTypes } from '../utils/helper/errorHandler';
 
 

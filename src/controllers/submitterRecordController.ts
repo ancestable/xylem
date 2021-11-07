@@ -12,7 +12,7 @@ import {
 } from 'tsoa';
 
 import { DatasetService, UserService } from '../services';
-import { ISubmitterRecordModel, SubmitterRecordCreationModel } from '../models';
+import { ISubmitterRecordModel, SubmitterRecordCreationModel } from '@ancestable/shared';
 import { inject, provideSingleton } from '../ioc';
 import { BaseRecordController } from './baseRecordController';
 import { SubmitterRecordService } from '../services/submitterRecordService';

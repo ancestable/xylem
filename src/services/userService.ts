@@ -1,6 +1,6 @@
 import { inject, provideSingleton } from '../ioc';
 import { BaseService } from './BaseService';
-import { IUserModel } from '../models';
+import { IUserModel } from '@ancestable/shared';
 import { PasswordEncryptionService } from './passwordEncryptionService';
 import { UserRepository } from '../repositories';
 

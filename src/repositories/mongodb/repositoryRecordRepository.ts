@@ -1,7 +1,8 @@
-import { IRepositoryRecordModel, RepositoryRecordFormatter } from '../../models';
 import { inject, provideSingleton } from '../../ioc';
 import { BaseRepository } from './BaseRepository';
+import { IRepositoryRecordModel } from '@ancestable/shared';
 import { MongoDbConnection } from '../../config/mongoConfiguration';
+import { RepositoryRecordFormatter } from '../../models';
 import { Schema } from 'mongoose';
 import { Tag } from '@ancestable/gedcom7models';
 

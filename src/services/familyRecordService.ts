@@ -1,4 +1,4 @@
-import { FamilyRecordCreationModel, IFamilyRecordModel } from '../models/familyRecordModel';
+import { FamilyRecordCreationModel, IFamilyRecordModel } from '@ancestable/shared';
 import { inject, provideSingleton } from '../ioc';
 import { BaseRecordService } from './baseRecordService';
 import { FamilyRecordRepository } from '../repositories';

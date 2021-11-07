@@ -4,18 +4,13 @@ import {
   IdentifierStructure,
   Medi,
   MultimediaFormat,
-  MultimediaRecord,
   NoteStructure,
   Restriction,
   SourceCitation,
   Tag,
 } from '@ancestable/gedcom7models';
 import { BaseFormatter } from './BaseFormatter';
-import { IBaseRecord } from './baseRecord';
-
-export interface IMultimediaRecordModel extends MultimediaRecord, IBaseRecord { }
-
-export type MultimediaRecordCreationModel = Omit<IMultimediaRecordModel, '_id' | 'id'>;
+import { IMultimediaRecordModel } from '@ancestable/shared';
 
 export class MultimediaRecordFormatter extends BaseFormatter implements IMultimediaRecordModel {
   parentDatasetId?: string = undefined;

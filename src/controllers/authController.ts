@@ -1,5 +1,4 @@
 import * as jsonwebtoken from 'jsonwebtoken';
-import { ApiError, IUserModel, LoginModel, LoginResponseModel, UserCreationModel } from '../models';
 import {
   Body,
   Controller,
@@ -8,8 +7,9 @@ import {
   Route,
   Tags,
 } from 'tsoa';
-
+import { IUserModel, LoginModel, LoginResponseModel, UserCreationModel } from '@ancestable/shared';
 import { inject, provideSingleton } from '../ioc';
+import { ApiError } from '../models';
 import { UserService } from '../services';
 import configuration from '../config/configuration';
 import { errorTypes } from '../utils/helper/errorHandler';

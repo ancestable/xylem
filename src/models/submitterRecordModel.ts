@@ -5,15 +5,10 @@ import {
   IdentifierStructure,
   MultimediaLink,
   NoteStructure,
-  SubmitterRecord,
   Tag,
 } from '@ancestable/gedcom7models';
 import { BaseFormatter } from './BaseFormatter';
-import { IBaseRecord } from './baseRecord';
-
-export interface ISubmitterRecordModel extends SubmitterRecord, IBaseRecord { }
-
-export type SubmitterRecordCreationModel = Omit<ISubmitterRecordModel, '_id' | 'id'>;
+import { ISubmitterRecordModel } from '@ancestable/shared';
 
 export class SubmitterRecordFormatter extends BaseFormatter implements ISubmitterRecordModel {
   parentDatasetId?: string = undefined;

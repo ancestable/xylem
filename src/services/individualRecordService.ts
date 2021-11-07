@@ -1,4 +1,4 @@
-import { IIndividualRecordModel, IndividualRecordCreationModel } from '../models';
+import { IIndividualRecordModel, IndividualRecordCreationModel } from '@ancestable/shared';
 import { inject, provideSingleton } from '../ioc';
 import { BaseRecordService } from './baseRecordService';
 import { IndividualRecordRepository } from '../repositories/mongodb/individualRecordRepository';

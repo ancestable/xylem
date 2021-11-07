@@ -1,18 +1,5 @@
 import { BaseFormatter } from './BaseFormatter';
-
-export interface IUserModel {
-  _id?: string;
-  id?: string;
-  email: string;
-  password: string;
-}
-
-export type UserCreationModel = Pick<IUserModel, 'email' | 'password'>;
-export type LoginModel = Pick<IUserModel, 'email' | 'password'>;
-export interface LoginResponseModel {
-  authToken: string;
-  expiresIn: string;
-}
+import { IUserModel } from '@ancestable/shared';
 
 export class UserFormatter extends BaseFormatter implements IUserModel {
   email: string = undefined;

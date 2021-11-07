@@ -4,15 +4,10 @@ import {
   CreationDate,
   IdentifierStructure,
   NoteStructure,
-  RepositoryRecord,
   Tag,
 } from '@ancestable/gedcom7models';
 import { BaseFormatter } from './BaseFormatter';
-import { IBaseRecord } from './baseRecord';
-
-export interface IRepositoryRecordModel extends RepositoryRecord, IBaseRecord { }
-
-export type RepositoryRecordCreationModel = Omit<IRepositoryRecordModel, '_id' | 'id'>;
+import { IRepositoryRecordModel } from '@ancestable/shared';
 
 export class RepositoryRecordFormatter extends BaseFormatter implements IRepositoryRecordModel {
   parentDatasetId?: string = undefined;

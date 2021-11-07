@@ -6,16 +6,11 @@ import {
   MultimediaLink,
   NoteStructure,
   PlaceStructure,
-  SourceRecord,
   SourceRepositoryCitation,
   Tag,
 } from '@ancestable/gedcom7models';
 import { BaseFormatter } from './BaseFormatter';
-import { IBaseRecord } from './baseRecord';
-
-export interface ISourceRecordModel extends SourceRecord, IBaseRecord { }
-
-export type SourceRecordCreationModel = Omit<ISourceRecordModel, '_id' | 'id'>;
+import { ISourceRecordModel } from '@ancestable/shared';
 
 export class SourceRecordFormatter extends BaseFormatter implements ISourceRecordModel {
   parentDatasetId?: string = undefined;

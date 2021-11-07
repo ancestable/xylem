@@ -1,6 +1,14 @@
-import { IFamilyRecordModel, IIndividualRecordModel, IMultimediaRecordModel, IRepositoryRecordModel, ISharedNoteRecordModel, ISourceRecordModel, ISubmitterRecordModel } from '.';
+import {
+  IFamilyRecordModel,
+  IIndividualRecordModel,
+  IMultimediaRecordModel,
+  IRepositoryRecordModel,
+  ISharedNoteRecordModel,
+  ISourceRecordModel,
+  ISubmitterRecordModel,
+  UserRole,
+} from '@ancestable/shared';
 import { BaseFormatter } from './BaseFormatter';
-import { UserRole } from './userRole.enum';
 
 type UserWithRoles = { [userId: string]: UserRole };
 

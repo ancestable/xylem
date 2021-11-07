@@ -4,7 +4,6 @@ import {
   CreationDate,
   FamilyAttributeStructure,
   FamilyEventStructure,
-  FamilyRecord,
   IndiPointer,
   MultimediaLink,
   NonEventStructure,
@@ -15,11 +14,7 @@ import {
   Tag,
 } from '@ancestable/gedcom7models';
 import { BaseFormatter } from './BaseFormatter';
-import { IBaseRecord } from './baseRecord';
-
-export interface IFamilyRecordModel extends FamilyRecord, IBaseRecord { }
-
-export type FamilyRecordCreationModel = Omit<IFamilyRecordModel, '_id' | 'id'>;
+import { IFamilyRecordModel } from '@ancestable/shared';
 
 export class FamilyRecordFormatter extends BaseFormatter implements IFamilyRecordModel {
   parentDatasetId?: string = undefined;

@@ -1,4 +1,4 @@
-import { IMultimediaRecordModel, MultimediaRecordCreationModel } from '../models';
+import { IMultimediaRecordModel, MultimediaRecordCreationModel } from '@ancestable/shared';
 import { inject, provideSingleton } from '../ioc';
 import { BaseRecordService } from './baseRecordService';
 import { MultimediaRecordRepository } from '../repositories/mongodb/multimediaRecordRepository';

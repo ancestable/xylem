@@ -8,7 +8,6 @@ import {
   IndiPointer,
   IndividualAttributeStructure,
   IndividualEventStructure,
-  IndividualRecord,
   MultimediaLink,
   NonEventStructure,
   NoteStructure,
@@ -21,11 +20,7 @@ import {
   Tag,
 } from '@ancestable/gedcom7models';
 import { BaseFormatter } from './BaseFormatter';
-import { IBaseRecord } from './baseRecord';
-
-export interface IIndividualRecordModel extends IndividualRecord, IBaseRecord { }
-
-export type IndividualRecordCreationModel = Omit<IIndividualRecordModel, '_id' | 'id'>;
+import { IIndividualRecordModel } from '@ancestable/shared';
 
 export class IndividualRecordFormatter extends BaseFormatter implements IIndividualRecordModel {
   parentDatasetId?: string = undefined;

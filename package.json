@@ -22,7 +22,7 @@
   "license": "MIT",
   "dependencies": {
     "@ancestable/gedcom2json": "0.0.1",
-    "@ancestable/shared": "^1.0.2",
+    "@ancestable/shared": "^1.0.3",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "inversify": "^5.1.1",

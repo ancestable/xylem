@@ -3,16 +3,11 @@ import {
   CreationDate,
   IdentifierStructure,
   Mime,
-  SharedNoteRecord,
   SourceCitation,
   Tag,
 } from '@ancestable/gedcom7models';
 import { BaseFormatter } from './BaseFormatter';
-import { IBaseRecord } from './baseRecord';
-
-export interface ISharedNoteRecordModel extends SharedNoteRecord, IBaseRecord { }
-
-export type SharedNoteRecordCreationModel = Omit<ISharedNoteRecordModel, '_id' | 'id'>;
+import { ISharedNoteRecordModel } from '@ancestable/shared';
 
 export class SharedNoteRecordFormatter extends BaseFormatter implements ISharedNoteRecordModel {
   parentDatasetId?: string = undefined;

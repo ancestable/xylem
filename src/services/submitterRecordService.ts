@@ -1,4 +1,4 @@
-import { ISubmitterRecordModel, SubmitterRecordCreationModel } from '../models';
+import { ISubmitterRecordModel, SubmitterRecordCreationModel } from '@ancestable/shared';
 import { inject, provideSingleton } from '../ioc';
 import { BaseRecordService } from './baseRecordService';
 import { SubmitterRecordRepository } from '../repositories/mongodb/submitterRecordRepository';

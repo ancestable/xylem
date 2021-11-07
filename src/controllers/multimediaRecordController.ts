@@ -12,7 +12,7 @@ import {
 } from 'tsoa';
 
 import { DatasetService, UserService } from '../services';
-import { IMultimediaRecordModel, MultimediaRecordCreationModel } from '../models';
+import { IMultimediaRecordModel, MultimediaRecordCreationModel } from '@ancestable/shared';
 import { inject, provideSingleton } from '../ioc';
 import { BaseRecordController } from './baseRecordController';
 import { MultimediaRecordService } from '../services/multimediaRecordService';

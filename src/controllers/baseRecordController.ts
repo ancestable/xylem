@@ -2,7 +2,7 @@ import { DatasetService, UserService } from '../services';
 import { ApiError } from '../models';
 import { BaseRecordService } from '../services/baseRecordService';
 import { Controller } from 'tsoa';
-import { IBaseRecord } from '../models/baseRecord';
+import { IBaseRecord } from '@ancestable/shared';
 import { errorTypes } from '../utils/helper/errorHandler';
 
 export class BaseRecordController<IRecordModel extends IBaseRecord, RecordCreationModel extends (IRecordModel & IBaseRecord)> extends Controller {

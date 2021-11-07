@@ -1,4 +1,4 @@
-import { ISourceRecordModel, SourceRecordCreationModel } from '../models';
+import { ISourceRecordModel, SourceRecordCreationModel } from '@ancestable/shared';
 import { inject, provideSingleton } from '../ioc';
 import { BaseRecordService } from './baseRecordService';
 import { SourceRecordRepository } from '../repositories/mongodb/sourceRecordRepository';

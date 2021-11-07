@@ -1,6 +1,7 @@
-import { FamilyRecordFormatter, IFamilyRecordModel } from '../../models';
 import { inject, provideSingleton } from '../../ioc';
 import { BaseRepository } from './BaseRepository';
+import { FamilyRecordFormatter } from '../../models';
+import { IFamilyRecordModel } from '@ancestable/shared';
 import { MongoDbConnection } from '../../config/mongoConfiguration';
 import { Schema } from 'mongoose';
 import { Tag } from '@ancestable/gedcom7models';

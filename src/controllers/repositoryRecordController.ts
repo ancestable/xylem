@@ -12,7 +12,7 @@ import {
 } from 'tsoa';
 
 import { DatasetService, UserService } from '../services';
-import { IRepositoryRecordModel, RepositoryRecordCreationModel } from '../models';
+import { IRepositoryRecordModel, RepositoryRecordCreationModel } from '@ancestable/shared';
 import { inject, provideSingleton } from '../ioc';
 import { BaseRecordController } from './baseRecordController';
 import { RepositoryRecordService } from '../services/repositoryRecordService';

@@ -1,7 +1,8 @@
-import { IMultimediaRecordModel, MultimediaRecordFormatter } from '../../models';
 import { inject, provideSingleton } from '../../ioc';
 import { BaseRepository } from './BaseRepository';
+import { IMultimediaRecordModel } from '@ancestable/shared';
 import { MongoDbConnection } from '../../config/mongoConfiguration';
+import { MultimediaRecordFormatter } from '../../models';
 import { Schema } from 'mongoose';
 import { Tag } from '@ancestable/gedcom7models';
 
