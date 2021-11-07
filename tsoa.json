@@ -1,0 +1,23 @@
+{
+  "entryFile": "./src/controllers/index.ts",
+  "noImplicitAdditionalProperties": "silently-remove-extras",
+  "spec": {
+    "entryFile": "./build/routes.ts",
+    "outputDirectory": "./build/swagger",
+    "spec": { },
+    "specMerging": "recursive",
+    "securityDefinitions": {
+      "jwt": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "x-access-token"
+      }
+    }
+  },
+  "routes": {
+    "iocModule": "./src/ioc",
+    "middleware": "express",
+    "routesDir": "./build",
+    "authenticationModule": "./src/authentication.ts"
+  }
+}

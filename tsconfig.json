@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitReturns": true,
+    "noImplicitAny": false,
+    "outDir": "./build",
+    "preserveConstEnums": true,
+    "removeComments": false,
+    "rootDirs": [
+      "./src",
+      "./build"
+    ],
+    "sourceMap": true,
+    "target": "es2015",
+  },
+  "exclude": [
+    "logs",
+    "node_modules"
+  ]
+}
